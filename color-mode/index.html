@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+
+
+  <link rel="stylesheet" href="/fontawesome-free-6.6.0-web/css/all.min.css" />
+  <link rel="stylesheet" href="/fontawesome-free-6.6.0-web/css/all.css" />
+  <link rel="stylesheet" href="/fontawesome-free-6.6.0-web/css/fontawesome.min.css" />
+  <link rel="stylesheet" href="/fontawesome-free-6.6.0-web/css/brands.min.css" />
+  <link rel="stylesheet" href="/fontawesome-free-6.6.0-web/css/solid.min.css" />
+
+
+</head>
+
+<body>
+  <section class=" hero">
+    <header>
+
+      <nav>
+        <img src="/images/logo.png" class="logo" alt="logo">
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">PORTFOLIO</a></li>
+          <li><a href="#">SERVICES</a></li>
+          <li><a href="#">HIRE ME</a></li>
+        </ul>
+
+        <i id="icon" class="fa-solid fa-moon"></i>
+      </nav>
+    </header>
+
+    <main>
+      <div class="info">
+        <h1>I'm <span>Kate</span> Amelia</h1>
+        <p>This is my official portfolio website to showcase <br> all works related to web development and UI design.
+        </p>
+        <a href="#">Download CV</a>
+      </div>
+
+      <div class="img-box">
+        <img src="/images/thumbnail1.png" class="back-img" alt="">
+        <img src="/images/user1.jpg" class="main-img" alt="">
+      </div>
+
+    </main>
+
+    <footer class="social-links">
+      <a href="#" class="fa-brands fa-facebook"></a>
+      <a href="#" class="fa-brands fa-twitter"></a>
+      <a href="#" class="fa-brands fa-youtube"></a>
+      <a href="#" class="fa-brands fa-linkedin"></a>
+      <a href="#" class="fa-brands fa-instagram"></a>
+
+    </footer>
+  </section>
+
+  <script>
+    var icon = document.getElementById("icon")
+    icon.onclick = () => {
+      document.body.classList.toggle('dark-theme')
+      if (document.body.classList.contains('dark-theme')) {
+        icon.classList.add('fa-sun')
+        icon.classList.remove('fa-moon')
+      }
+      else {
+        icon.classList.add('fa-moon')
+      }
+    }
+  </script>
+</body>
+
+
+</html>
