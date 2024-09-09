@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToDo List</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="/fontawesome-free-6.6.0-web/css/all.min.css" />
+  <link rel="stylesheet" href="/fontawesome-free-6.6.0-web/css/all.css" />
+  <link rel="stylesheet" href="/fontawesome-free-6.6.0-web/css/fontawesome.min.css" />
+  <link rel="stylesheet" href="/fontawesome-free-6.6.0-web/css/brands.min.css" />
+  <link rel="stylesheet" href="/fontawesome-free-6.6.0-web/css/solid.min.css" />
+</head>
+
+<body>
+  <section class="container">
+    <div class="app">
+
+      <h1>To-Do List
+
+        <i class="fa fa-list" aria-hidden="true"></i>
+      </h1>
+
+      <div class="row">
+        <input type="text" placeholder="Add your task" name="" id="input-box">
+        <button type="submit" onclick="addTask()">Add</button>
+      </div>
+
+      <ul id="list-container">
+        <!-- <li class="checked">Task 1</li>
+        <li>Task 2</li>
+        <li>Task 3</li> -->
+      </ul>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
