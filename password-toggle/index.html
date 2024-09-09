@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="/fontawesome-free-6.6.0-web/css/all.min.css" />
+  <link rel="stylesheet" href="/fontawesome-free-6.6.0-web/css/all.css" />
+  <link rel="stylesheet" href="/fontawesome-free-6.6.0-web/css/fontawesome.min.css" />
+  <link rel="stylesheet" href="/fontawesome-free-6.6.0-web/css/brands.min.css" />
+  <link rel="stylesheet" href="/fontawesome-free-6.6.0-web/css/solid.min.css" />
+</head>
+
+<body>
+  <section class="input-box">
+    <input type="password" name="" id="password" placeholder="password">
+    <i class="fa fa-eye-slash" id="eyeicon" aria-hidden="true"></i>
+
+  </section>
+
+  <script>
+    let eyeicon = document.getElementById('eyeicon')
+    let password = document.getElementById('password')
+
+
+
+    eyeicon.addEventListener('click', () => {
+      eyeicon.classList.toggle('fa-eye-slash')
+
+      if (password.type == 'password') {
+        eyeicon.classList.add('fa-eye')
+        password.type = 'text'
+      }
+      else {
+        password.type = 'password'
+        eyeicon.classList.remove('fa-eye')
+      }
+    })
+  </script>
+</body>
+
+</html>

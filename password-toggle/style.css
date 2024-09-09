@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  line-height: 1.7;
+  background-color: #250057;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+.input-box {
+  background-color: #fff;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 300px auto;
+  display: flex;
+  align-items: center;
+}
+.input-box input {
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+  outline: none;
+  font-size: 24px;
+  color: #555;
+}
+.input-box .fa {
+  font-size: 35px;
+  cursor: pointer;
+}
